@@ -7,10 +7,19 @@ and this project tries to adhere to [Semantic Versioning](https://semver.org/spe
 ## [Unreleased Changes]
 None currently
 
+## [6.0.6] - 2024-12-22
+
+### Updated
+
+- Sync upstream (v6.0.6)
+- Sodium compat (v0.6.0)
+- Iris compat (v1.8.0) (experimental)
+
 ### Fixed
+
 - Default config values being wrong
 
-## [6.0.3](https://github.com/iPortalTeam/ImmersivePortalsModForNeo/tree/7c526fc7f1af2f339bf1611d9aa53db5f80ae91d) - 2024-10-20
+## [6.0.3] - 2024-10-20
 
 ### Added
 
@@ -21,6 +30,7 @@ None currently
 - Iris compatibility is not fully functional
 - Crash with SecurityCraft
 
-[Unreleased Changes]: https://github.com/iPortalTeam/ImmersivePortalsModForNeo/compare/v6.0.3...HEAD
+[Unreleased Changes]: https://github.com/iPortalTeam/ImmersivePortalsModForNeo/compare/v6.0.6...HEAD
+[6.0.6]: https://github.com/iPortalTeam/ImmersivePortalsModForNeo/releases/tag/v6.0.6
 [6.0.3]: https://github.com/iPortalTeam/ImmersivePortalsModForNeo/releases/tag/v6.0.3
 
