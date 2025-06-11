@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.Lighting;
 import com.mojang.blaze3d.systems.RenderSystem;
 import de.nick1st.imm_ptl.events.ClientCleanupEvent;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import io.github.distant.horizons.api.DistantHorizonsAPI;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -170,6 +171,10 @@ public class MyGameRenderer {
         // switch (note: it will no longer switch the world that client player is in )
         ((IEMinecraftClient) client).ip_setWorldRenderer(worldRenderer);
         client.level = newWorld;
+        ClientLevel playerWorld = Minecraft.getInstance().player.clientLevel;
+        if (newWorld != playerWorld) {
+            DistantHorizonsAPI.getClientRenderManager().suspendRenderingForFrame();
+        }
         ieGameRenderer.ip_setLightmapTextureManager(helper.lightmapTexture);
         
         client.getBlockEntityRenderDispatcher().level = newWorld;

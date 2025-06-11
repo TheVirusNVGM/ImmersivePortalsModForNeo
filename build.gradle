@@ -129,6 +129,8 @@ dependencies {
     implementation "maven.modrinth:cloth-config:15.0.140+neoforge"
     implementation "maven.modrinth:pehkui:3.8.3+1.21-neoforge"
 
+    implementation "maven.modrinth:distanthorizons:2.3.2-b-1.21.1"
+
     // The Aether
     implementation "maven.modrinth:owo-lib:0.12.15-beta.12+1.21"
     implementation "maven.modrinth:aether:1.21.1-1.5.1-beta.4-neoforge"
